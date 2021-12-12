@@ -1,6 +1,8 @@
 package stream;
 
 
+import stream.GroupingTest.CaloricLevel;
+
 public class Dish {
 
     private Type type;
@@ -43,7 +45,17 @@ public class Dish {
         return isVegetarian;
     }
 
-    enum Type {
+    public CaloricLevel getCaloricType() {
+        if (this.calories <= 10) {
+            return CaloricLevel.DIET;
+        }
+        if (this.calories <= 30) {
+            return CaloricLevel.NORMAL;
+        }
+        return CaloricLevel.FAT;
+    }
+
+    public enum Type {
         PIZZA, CHICKEN, PASTA
     }
 }

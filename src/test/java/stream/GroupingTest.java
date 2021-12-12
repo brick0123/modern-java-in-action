@@ -117,7 +117,7 @@ public class GroupingTest {
     }
 
 
-    enum CaloricLevel {
+    public enum CaloricLevel {
         FAT, NORMAL, DIET;
     }
 }

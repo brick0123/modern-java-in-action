@@ -1,4 +1,4 @@
-package collection;
+package refactor;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
