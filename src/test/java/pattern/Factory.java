@@ -20,11 +20,14 @@ public class Factory {
 class ProductFactory {
 
     public static Product createProduct(String name) {
-        return switch (name) {
-            case "loan" -> new Loan();
-            case "stock" -> new Stock();
-            default -> throw new IllegalArgumentException();
-        };
+        switch (name) {
+            case "loan":
+                return new Loan();
+            case "stock":
+                return new Stock();
+            default:
+                throw new IllegalArgumentException();
+        }
     }
 }
 
