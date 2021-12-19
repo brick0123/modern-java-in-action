@@ -52,7 +52,7 @@ public class SpliteratorTest {
             .mapToObj(word::charAt);
 
         final int countWords = WordCounter.countWords(stream.parallel());
-        assertEquals(2, countWords);
+        assertEquals(3, countWords);
         System.out.println("Found " + countWords + " Words");
     }
 
